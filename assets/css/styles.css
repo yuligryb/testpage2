@@ -995,22 +995,20 @@ h3 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 1.6rem;
-    line-height: 1.3;
+    font-size: 1.5rem;
+    line-height: 1.25;
   }
 
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-bottom: 0.75rem;
   }
 
   h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .hero-grid,
-  .card-grid,
-  .gallery-grid,
   .trust-grid,
   .stats-grid,
   .philosophy-grid,
@@ -1021,18 +1019,29 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  /* Keep 2 columns for cards and gallery on mobile */
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
   /* Make hero image appear first on mobile */
   .hero-grid {
     display: flex;
     flex-direction: column-reverse;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   /* Make about image appear first on mobile */
   .about-grid {
     display: flex;
     flex-direction: column-reverse;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   /* Make gallery images stack better */
@@ -1044,7 +1053,7 @@ h3 {
   .hero-buttons {
     flex-direction: column;
     width: 100%;
-    gap: 0.75rem;
+    gap: 0.65rem;
   }
 
   .hero-buttons .btn {
@@ -1065,241 +1074,362 @@ h3 {
   .nav-inner {
     flex-direction: column;
     gap: 0.5rem;
-    padding: 0.75rem 0;
+    padding: 0.65rem 0;
   }
 
   .nav nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.25rem;
+    gap: 0.15rem;
   }
 
   .nav a {
     margin-left: 0;
     margin: 0;
-    padding: 0.5rem 0.75rem;
-    font-size: 0.9rem;
+    padding: 0.4rem 0.65rem;
+    font-size: 0.85rem;
   }
 
   .logo {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .hero-image,
   .about-image {
-    min-height: 250px;
+    min-height: 220px;
   }
 
   /* Improve mobile padding and spacing */
   .container {
-    padding: 1.5rem 1rem;
+    padding: 1.25rem 0.85rem;
   }
 
   .page-hero {
-    padding: 2rem 1rem 1.5rem;
+    padding: 1.75rem 0.85rem 1.25rem;
   }
 
   .page-hero h1 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
   }
 
   .lead {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
   }
 
   .hero-text p {
-    font-size: 0.95rem;
-    margin: 1rem 0 1.5rem;
+    font-size: 0.9rem;
+    margin: 0.85rem 0 1.25rem;
+    line-height: 1.5;
   }
 
   /* Make cards more compact on mobile */
   .card {
-    padding: 1.25rem;
+    padding: 1rem;
   }
 
   .card-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-  }
-
-  .card h3 {
-    font-size: 1.1rem;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
     margin-bottom: 0.75rem;
   }
 
+  .card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
   .card p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
   }
 
   /* Adjust contact grid for mobile */
   .contact-method {
     flex-direction: row;
     align-items: start;
-    margin-bottom: 1.5rem;
-    gap: 1rem;
+    margin-bottom: 1.25rem;
+    gap: 0.85rem;
   }
 
   .contact-icon {
-    width: 45px;
-    height: 45px;
-    font-size: 1.3rem;
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
   }
 
   .contact-method h3 {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .contact-method p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
   }
 
   /* Compact stats */
   .stat-number {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .stat-label {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   /* Compact testimonials */
   .testimonial {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
 
   .testimonial-text {
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.85rem;
+    line-height: 1.5;
   }
 
   .author-initial {
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
+    width: 38px;
+    height: 38px;
+    font-size: 0.95rem;
   }
 
   .author-name {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .author-treatment {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
   /* Compact philosophy items */
   .philosophy-item {
-    padding: 1rem;
+    padding: 0.85rem;
   }
 
   .philosophy-icon {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 0.5rem;
   }
 
   .philosophy-item h3 {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
   }
 
   .philosophy-item p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
   }
 
   /* Compact gallery */
   .gallery-image {
-    height: 200px;
+    height: 160px;
   }
 
   .gallery-caption {
-    padding: 1rem;
+    padding: 0.85rem;
   }
 
   .gallery-caption h4 {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
   }
 
   .gallery-caption p {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
   }
 
   /* Compact FAQ */
   .faq-item {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
 
   .faq-item h3 {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.65rem;
   }
 
   .faq-item p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
   }
 
   /* Compact forms */
   .contact-form {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
 
   .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 0.85rem;
   }
 
   .form-group label {
-    font-size: 0.9rem;
-    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.35rem;
   }
 
   .form-group input,
   .form-group select,
   .form-group textarea {
-    padding: 0.65rem 0.85rem;
-    font-size: 0.9rem;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .checkbox-label {
+    font-size: 0.8rem;
+  }
+
+  .form-note {
+    font-size: 0.75rem;
   }
 
   /* Compact trust bar */
   .trust-grid {
-    gap: 1rem;
+    gap: 0.75rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .trust-grid > div {
-    padding: 0.75rem;
-    font-size: 0.85rem;
+    padding: 0.65rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
   }
 
   /* Compact CTA */
   .cta h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.65rem;
   }
 
   .cta p {
-    font-size: 0.95rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
   }
 
   /* Compact buttons */
   .btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 0.9rem;
+    padding: 0.7rem 1.3rem;
+    font-size: 0.85rem;
   }
 
   /* About content spacing */
+  .about-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.85rem;
+  }
+
   .about-content p {
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.85rem;
+    line-height: 1.6;
   }
 
   /* Reduce gaps in various sections */
   .stats-grid,
-  .card-grid,
   .testimonial-grid,
   .faq-grid {
-    gap: 1.25rem;
+    gap: 1rem;
   }
 
-  .gallery-grid {
-    gap: 1.5rem;
+  /* Service compact sections on mobile */
+  .service-compact {
+    margin-bottom: 2rem;
+  }
+
+  .service-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .service-icon-compact {
+    font-size: 2rem;
+  }
+
+  .service-description-compact {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+
+  .service-columns {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .service-box {
+    padding: 1rem;
+  }
+
+  .service-box h3 {
+    font-size: 1rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .service-box li {
+    font-size: 0.85rem;
+    padding: 0.3rem 0 0.3rem 1rem;
+    line-height: 1.5;
+  }
+
+  /* Note box compact */
+  .note-box {
+    padding: 1.5rem;
+  }
+
+  .note-box h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .note-box p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Gallery disclaimer compact */
+  .gallery-disclaimer {
+    padding: 1.25rem;
+  }
+
+  .gallery-disclaimer p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  /* Legal content compact */
+  .legal-section {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .legal-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .legal-section h3 {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .legal-section p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+
+  .legal-section ul {
+    margin: 0.75rem 0 0.75rem 1.5rem;
+  }
+
+  .legal-section li {
+    font-size: 0.85rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.5;
   }
 }
