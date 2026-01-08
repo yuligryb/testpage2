@@ -6,6 +6,86 @@
   <title>Services | Dr. Full Name</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .service-compact {
+      margin-bottom: 3rem;
+    }
+
+    .service-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-icon-compact {
+      font-size: 2.5rem;
+      flex-shrink: 0;
+    }
+
+    .service-header h2 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .service-description-compact {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .service-box {
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .service-box h3 {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      color: var(--text);
+    }
+
+    .service-box ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .service-box li {
+      padding: 0.4rem 0 0.4rem 1.2rem;
+      position: relative;
+      line-height: 1.6;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .service-box li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .service-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .service-header h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -30,135 +110,140 @@
 </section>
 
 <section class="container">
-  <div class="service-detail">
-    <div class="service-icon-large">💉</div>
-    <h2>Aesthetic Injectables</h2>
-    <p class="service-description">
-      Medical-grade injectable treatments designed to enhance facial balance and structure while preserving natural expression. Our approach prioritizes safety, precision, and individualized treatment planning to achieve subtle, harmonious results.
+  <!-- Aesthetic Injectables -->
+  <div class="service-compact">
+    <div class="service-header">
+      <div class="service-icon-compact">💉</div>
+      <h2>Aesthetic Injectables</h2>
+    </div>
+    <p class="service-description-compact">
+      Medical-grade injectable treatments designed to enhance facial balance and structure while preserving natural expression.
     </p>
-    
-    <div class="service-includes">
-      <h3>Treatment Options Include:</h3>
-      <ul>
-        <li><strong>Dermal Fillers:</strong> Hyaluronic acid-based fillers for volume restoration, facial contouring, and structural support</li>
-        <li><strong>Neuromodulators:</strong> Botulinum toxin treatments for expression line softening and facial balance</li>
-        <li><strong>Bio-Remodeling:</strong> Advanced injectable treatments for skin quality improvement and deep hydration</li>
-        <li><strong>Lip Enhancement:</strong> Natural proportion and definition with conservative techniques</li>
-        <li><strong>Jawline & Chin Contouring:</strong> Non-surgical facial structure enhancement</li>
-        <li><strong>Under-Eye Treatment:</strong> Tear trough correction and periorbital rejuvenation</li>
-        <li><strong>Facial Asymmetry Correction:</strong> Balancing and harmonizing facial features</li>
-      </ul>
-      
-      <h3>What to Expect:</h3>
-      <ul>
-        <li>Comprehensive facial assessment and treatment planning</li>
-        <li>Detailed discussion of treatment options and expected outcomes</li>
-        <li>Precise injection technique with minimal discomfort</li>
-        <li>Immediate visible results with minimal downtime</li>
-        <li>Follow-up appointments to assess results and optimize outcomes</li>
-      </ul>
+    <div class="service-columns">
+      <div class="service-box">
+        <h3>Treatment Options</h3>
+        <ul>
+          <li>Dermal Fillers - Volume & contouring</li>
+          <li>Neuromodulators - Expression line softening</li>
+          <li>Bio-Remodeling - Skin quality improvement</li>
+          <li>Lip Enhancement - Natural proportion</li>
+          <li>Jawline & Chin Contouring</li>
+          <li>Under-Eye Treatment</li>
+        </ul>
+      </div>
+      <div class="service-box">
+        <h3>What to Expect</h3>
+        <ul>
+          <li>Comprehensive facial assessment</li>
+          <li>Detailed treatment planning</li>
+          <li>Precise injection technique</li>
+          <li>Immediate results, minimal downtime</li>
+          <li>Follow-up optimization</li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <div class="service-detail">
-    <div class="service-icon-large">🔬</div>
-    <h2>Clinical Trichology</h2>
-    <p class="service-description">
-      Comprehensive hair and scalp evaluation with evidence-based treatment protocols addressing hair loss, thinning, and scalp health. Our trichology services combine medical expertise with advanced diagnostic techniques to identify underlying causes and develop effective treatment strategies.
+  <!-- Clinical Trichology -->
+  <div class="service-compact">
+    <div class="service-header">
+      <div class="service-icon-compact">🔬</div>
+      <h2>Clinical Trichology</h2>
+    </div>
+    <p class="service-description-compact">
+      Comprehensive hair and scalp evaluation with evidence-based treatment protocols for hair loss, thinning, and scalp health.
     </p>
-    
-    <div class="service-includes">
-      <h3>Conditions Treated:</h3>
-      <ul>
-        <li><strong>Androgenic Alopecia:</strong> Pattern hair loss in men and women</li>
-        <li><strong>Telogen Effluvium:</strong> Temporary hair shedding and thinning</li>
-        <li><strong>Alopecia Areata:</strong> Autoimmune hair loss conditions</li>
-        <li><strong>Scalp Conditions:</strong> Seborrheic dermatitis, psoriasis, and other scalp disorders</li>
-        <li><strong>Hair Breakage & Damage:</strong> Structural hair issues and fragility</li>
-        <li><strong>Postpartum Hair Loss:</strong> Hormonal hair changes after pregnancy</li>
-      </ul>
-      
-      <h3>Treatment Protocols:</h3>
-      <ul>
-        <li>Comprehensive scalp and hair analysis using clinical imaging</li>
-        <li>Medical-grade topical treatments and prescription therapies</li>
-        <li>PRP (Platelet-Rich Plasma) therapy for hair restoration</li>
-        <li>Microneedling with growth factor serums</li>
-        <li>Nutritional and supplement guidance</li>
-        <li>Lifestyle and hair care protocol optimization</li>
-        <li>Regular monitoring and treatment adjustment</li>
-      </ul>
+    <div class="service-columns">
+      <div class="service-box">
+        <h3>Conditions Treated</h3>
+        <ul>
+          <li>Androgenic Alopecia (pattern hair loss)</li>
+          <li>Telogen Effluvium (hair shedding)</li>
+          <li>Alopecia Areata</li>
+          <li>Scalp disorders & inflammation</li>
+          <li>Hair breakage & damage</li>
+          <li>Postpartum hair loss</li>
+        </ul>
+      </div>
+      <div class="service-box">
+        <h3>Treatment Protocols</h3>
+        <ul>
+          <li>Clinical scalp & hair analysis</li>
+          <li>Medical-grade topical treatments</li>
+          <li>PRP therapy for hair restoration</li>
+          <li>Microneedling with growth factors</li>
+          <li>Nutritional guidance</li>
+          <li>Regular monitoring & adjustment</li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <div class="service-detail">
-    <div class="service-icon-large">✨</div>
-    <h2>Regenerative & Skin Treatments</h2>
-    <p class="service-description">
-      Advanced skin treatments focused on improving skin quality, texture, and long-term health using evidence-based regenerative techniques. These treatments support natural collagen production and cellular renewal for sustained improvements in skin appearance.
+  <!-- Regenerative & Skin Treatments -->
+  <div class="service-compact">
+    <div class="service-header">
+      <div class="service-icon-compact">✨</div>
+      <h2>Regenerative & Skin Treatments</h2>
+    </div>
+    <p class="service-description-compact">
+      Advanced skin treatments focused on improving skin quality, texture, and long-term health using regenerative techniques.
     </p>
-    
-    <div class="service-includes">
-      <h3>Available Treatments:</h3>
-      <ul>
-        <li><strong>PRP Facial Therapy:</strong> Autologous platelet-rich plasma for skin rejuvenation</li>
-        <li><strong>Medical Microneedling:</strong> Collagen induction therapy with growth factors</li>
-        <li><strong>Bio-Remodeling Injectables:</strong> Skin quality improvement and hydration</li>
-        <li><strong>Chemical Peels:</strong> Medical-grade exfoliation for texture and tone improvement</li>
-        <li><strong>Medical-Grade Skincare:</strong> Prescription-strength topical protocols</li>
-        <li><strong>Skin Booster Treatments:</strong> Deep hydration and elasticity enhancement</li>
-        <li><strong>Combination Protocols:</strong> Multi-modality approaches for optimal results</li>
-      </ul>
-      
-      <h3>Treatment Benefits:</h3>
-      <ul>
-        <li>Improved skin texture, tone, and overall quality</li>
-        <li>Reduction in fine lines and surface irregularities</li>
-        <li>Enhanced skin hydration and radiance</li>
-        <li>Minimized pore appearance and smoother skin</li>
-        <li>Long-term collagen stimulation and skin health</li>
-        <li>Minimal downtime with progressive results</li>
-      </ul>
+    <div class="service-columns">
+      <div class="service-box">
+        <h3>Available Treatments</h3>
+        <ul>
+          <li>PRP Facial Therapy</li>
+          <li>Medical Microneedling</li>
+          <li>Bio-Remodeling Injectables</li>
+          <li>Chemical Peels</li>
+          <li>Medical-Grade Skincare</li>
+          <li>Skin Booster Treatments</li>
+        </ul>
+      </div>
+      <div class="service-box">
+        <h3>Treatment Benefits</h3>
+        <ul>
+          <li>Improved texture, tone & quality</li>
+          <li>Reduction in fine lines</li>
+          <li>Enhanced hydration & radiance</li>
+          <li>Minimized pore appearance</li>
+          <li>Long-term collagen stimulation</li>
+          <li>Minimal downtime, progressive results</li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <div class="service-detail">
-    <div class="service-icon-large">🎯</div>
-    <h2>Skin Analysis & Consultation</h2>
-    <p class="service-description">
-      In-depth skin assessment using clinical imaging and comprehensive evaluation to develop personalized treatment plans. Every treatment begins with a thorough understanding of your skin, concerns, and goals.
-    </p>
-    
-    <div class="service-includes">
-      <h3>Consultation Process:</h3>
-      <ul>
-        <li>Detailed medical history and skin concern assessment</li>
-        <li>Clinical skin analysis and photography</li>
-        <li>Discussion of treatment options and realistic outcomes</li>
-        <li>Customized treatment plan development</li>
-        <li>Pricing transparency and treatment timeline</li>
-        <li>Questions and concerns addressed thoroughly</li>
-      </ul>
+  <!-- Consultation & Protocol Design -->
+  <div class="service-compact">
+    <div class="service-header">
+      <div class="service-icon-compact">🎯</div>
+      <h2>Consultation & Treatment Planning</h2>
     </div>
-  </div>
-
-  <div class="service-detail">
-    <div class="service-icon-large">📋</div>
-    <h2>Treatment Protocol Design</h2>
-    <p class="service-description">
-      Custom treatment protocols combining multiple modalities for optimal, long-lasting results. Our methodological approach ensures treatments are evidence-based, safe, and tailored to your individual needs and goals.
+    <p class="service-description-compact">
+      In-depth assessment and customized treatment protocols combining multiple modalities for optimal results.
     </p>
-    
-    <div class="service-includes">
-      <h3>Protocol Development:</h3>
-      <ul>
-        <li>Multi-modal treatment planning for complex concerns</li>
-        <li>Phased approach to achieving aesthetic goals</li>
-        <li>Integration of injectable, regenerative, and topical treatments</li>
-        <li>Regular assessment and protocol adjustment</li>
-        <li>Long-term maintenance planning</li>
-        <li>Evidence-based treatment selection and timing</li>
-      </ul>
+    <div class="service-columns">
+      <div class="service-box">
+        <h3>Consultation Process</h3>
+        <ul>
+          <li>Medical history & skin assessment</li>
+          <li>Clinical analysis & photography</li>
+          <li>Treatment options discussion</li>
+          <li>Customized plan development</li>
+          <li>Transparent pricing & timeline</li>
+        </ul>
+      </div>
+      <div class="service-box">
+        <h3>Protocol Design</h3>
+        <ul>
+          <li>Multi-modal treatment planning</li>
+          <li>Phased approach to goals</li>
+          <li>Treatment integration</li>
+          <li>Regular assessment & adjustment</li>
+          <li>Long-term maintenance planning</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -166,12 +251,9 @@
 <section class="pricing-note">
   <div class="container">
     <div class="note-box">
-      <h3>Consultation & Pricing Information</h3>
+      <h3>Consultation & Pricing</h3>
       <p>
-        All services require an initial consultation to assess suitability, discuss treatment options, and develop a personalized plan. Consultation fees vary by service and are often applied toward your first treatment.
-      </p>
-      <p>
-        Treatment pricing depends on the specific protocol, products used, and treatment area. Detailed pricing information is provided during your consultation along with transparent discussion of all associated costs.
+        All services require an initial consultation to assess suitability and develop a personalized plan. Consultation fees vary by service and are often applied toward your first treatment.
       </p>
       <a href="contact.html" class="btn primary">Schedule Consultation</a>
     </div>
