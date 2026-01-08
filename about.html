@@ -6,6 +6,90 @@
   <title>About | Dr. Full Name</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    /* Certifications Gallery Section */
+    .certifications-gallery {
+      background: var(--bg);
+      padding: 4rem 1.5rem;
+    }
+
+    .certifications-gallery h2 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 3rem;
+    }
+
+    .cert-images-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .cert-image-item {
+      text-align: center;
+    }
+
+    .cert-image-placeholder {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background: linear-gradient(135deg, var(--light-accent) 0%, #d4e0d6 100%);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .cert-image-placeholder:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .cert-image-placeholder span {
+      color: rgba(0, 0, 0, 0.2);
+      font-size: 1rem;
+      font-family: "Playfair Display", serif;
+    }
+
+    .cert-image-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .cert-image-caption {
+      color: var(--text);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    /* Responsive Design for Certifications */
+    @media (max-width: 1024px) {
+      .cert-images-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .cert-images-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -124,6 +208,63 @@
       <p style="color: var(--muted); font-size: 0.95rem; line-height: 1.7;">
         <strong>Professional Memberships:</strong> American Academy of Aesthetic Medicine • International Association of Trichologists • Society for Aesthetic Medicine
       </p>
+    </div>
+  </div>
+</section>
+
+<section class="certifications-gallery">
+  <div class="container">
+    <h2>Certifications & Credentials</h2>
+    <p class="section-subtitle">Official certifications and continuing education</p>
+    
+    <div class="cert-images-grid">
+      <div class="cert-image-item">
+        <div class="cert-image-placeholder">
+          <!-- Replace with: <img src="assets/images/cert-1.jpg" alt="Medical License"> -->
+          <span>Certificate 1</span>
+        </div>
+        <p class="cert-image-caption">Medical License</p>
+      </div>
+      
+      <div class="cert-image-item">
+        <div class="cert-image-placeholder">
+          <!-- Replace with: <img src="assets/images/cert-2.jpg" alt="Aesthetic Training"> -->
+          <span>Certificate 2</span>
+        </div>
+        <p class="cert-image-caption">Advanced Aesthetics</p>
+      </div>
+      
+      <div class="cert-image-item">
+        <div class="cert-image-placeholder">
+          <!-- Replace with: <img src="assets/images/cert-3.jpg" alt="Trichology Certification"> -->
+          <span>Certificate 3</span>
+        </div>
+        <p class="cert-image-caption">Clinical Trichology</p>
+      </div>
+      
+      <div class="cert-image-item">
+        <div class="cert-image-placeholder">
+          <!-- Replace with: <img src="assets/images/cert-4.jpg" alt="PRP Training"> -->
+          <span>Certificate 4</span>
+        </div>
+        <p class="cert-image-caption">PRP Therapy</p>
+      </div>
+      
+      <div class="cert-image-item">
+        <div class="cert-image-placeholder">
+          <!-- Replace with: <img src="assets/images/cert-5.jpg" alt="Methodology Degree"> -->
+          <span>Certificate 5</span>
+        </div>
+        <p class="cert-image-caption">Medical Methodology</p>
+      </div>
+      
+      <div class="cert-image-item">
+        <div class="cert-image-placeholder">
+          <!-- Replace with: <img src="assets/images/cert-6.jpg" alt="Safety Certification"> -->
+          <span>Certificate 6</span>
+        </div>
+        <p class="cert-image-caption">Safety & Complications</p>
+      </div>
     </div>
   </div>
 </section>
